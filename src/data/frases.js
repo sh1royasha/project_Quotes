@@ -1,0 +1,17 @@
+export const frases = [
+  "“El cambio también puede ser hermoso.”",
+  "“Brilla con calma, incluso en la caída.”",
+  "“Nada en la naturaleza se apura, y aun así todo florece.”",
+  "“Sé como el cerezo: florece incluso sabiendo que caerás.”",
+  "“Los sueños florecen cuando el corazón se calma.”",
+  "“Las estrellas no compiten, simplemente brillan.”",
+  "“No somos nuestros fracasos, no somos lo que fuimos, debemos ser mejores!”",
+  "“Han sido días difíciles, cansados, de mucho trabajo, pero solo tú sabes lo mucho que te esforzaste por querer salir adelante.”",
+  "“Si hago cosas por ti, no es para que me quieras. Es para que sepas que te quiero!”",
+  "“Aunque el camino sea largo, cada pequeño paso que des te acerca a tu meta.”",
+  "“Recuerda, en nuestra vida nosotros no somos lectores, sino escritores.”",
+  "“¡No te rindas, no debes sentirte avergonzado por caer! ¡La verdadera vergüenza está en no volver a levantarse!”",
+  "“No dejes que nada te detenga. Lucha por tus metas, incluso cuando parezcan fuera de tu alcance.”",
+  "“No juzgues quién eres, simplemente acéptalo. Si quieres cambiar y ser una mejor persona, tendrás que aceptar quién fuiste alguna vez.”",
+  "“El miedo no es malo, te dice dónde está tu debilidad. Una vez que conoces tus debilidades, te vuelves más fuerte y amable al mismo tiempo.”",
+];

@@ -12,7 +12,7 @@ function App() {
   const clickSound = useRef(null);
   const regaloSound = useRef(null);
 
-  const decoraciones = ["/salchicha1.JPG", "/salchicha2.JPG"];
+  const decoraciones = ["salchicha1.JPG", "salchicha2.JPG"];
 
   const getTodayKey = () => {
     const today = new Date();
@@ -88,8 +88,8 @@ function App() {
   return (
     <div className="app">
       {/* sonidos */}
-      <audio ref={clickSound} src="/click.mp3" preload="auto"></audio>
-      <audio ref={regaloSound} src="/regalo.mp3" preload="auto"></audio>
+      <audio ref={clickSound} src="click.mp3" preload="auto"></audio>
+      <audio ref={regaloSound} src="regalo.mp3" preload="auto"></audio>
 
       {!started ? (
         <div className="start-screen">
@@ -120,7 +120,7 @@ function App() {
         {Array.from({ length: 5 }).map((_, i) => (
           <img
             key={i}
-            src={`/tulip${(i % 5) + 1}.svg`}
+            src={`tulip${(i % 5) + 1}.svg`}
             alt={`Tulipán ${i + 1}`}
             className={`tulip tulip-${i}`}
           />

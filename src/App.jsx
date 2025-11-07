@@ -30,20 +30,27 @@ const getTodayKey = () => {
   };
 
   useEffect(() => {
-    const todayKey = getTodayKey();
-    const savedData = localStorage.getItem("fraseDia");
+  const todayKey = getTodayKey();
+  const savedData = localStorage.getItem("fraseDia");
 
-    if (savedData) {
-      const { date, frase } = JSON.parse(savedData);
-      if (date === todayKey) {
-        setFrase(frase);
-        setStarted(true);
-        const randomDeco =
-          decoraciones[Math.floor(Math.random() * decoraciones.length)];
-        setDecoracion(randomDeco);
-      }
+  if (savedData) {
+    const { date, frase } = JSON.parse(savedData);
+
+    if (date === todayKey) {
+      // ✅ Mismo día: mantener frase y saltar pantalla de inicio
+      setFrase(frase);
+      setStarted(true);
+      const randomDeco =
+        decoraciones[Math.floor(Math.random() * decoraciones.length)];
+      setDecoracion(randomDeco);
+    } else {
+      // 🌅 Día nuevo: borrar frase vieja para que se muestre el botón
+      localStorage.removeItem("fraseDia");
+      setFrase("");
+      setStarted(false); // 👈 vuelve a mostrar la pantalla de inicio
     }
-  }, []);
+  }
+}, []);
 
   const nuevaFrase = () => {
   const todayKey = getTodayKey();

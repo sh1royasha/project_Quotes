@@ -14,10 +14,13 @@ function App() {
 
   const decoraciones = ["salchicha1.JPG", "salchicha2.JPG"];
 
-  const getTodayKey = () => {
-    const today = new Date();
-    return today.toISOString().split("T")[0];
-  };
+const getTodayKey = () => {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`; // ej. 2025-11-07 (hora local)
+};
 
   const playSound = (soundRef) => {
     if (soundRef.current) {

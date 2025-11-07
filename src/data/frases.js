@@ -1,5 +1,6 @@
 export const frases = [
   "“El cambio también puede ser hermoso.”",
+  ""ganaste un Cupon valido por lo que quieras (cita,flores,llamada,etc)"",
   "“Brilla con calma, incluso en la caída.”",
   "“Nada en la naturaleza se apura, y aun así todo florece.”",
   "“Sé como el cerezo: florece incluso sabiendo que caerás.”",
